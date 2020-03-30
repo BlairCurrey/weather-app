@@ -6,13 +6,19 @@ darksky = {
     key:"017fe4f0150142704cf64876a8724e17",
     latitude: 40.8119864,
     longitude: -73.9517879,
-    url: `https://api.darksky.net/forecast/${this.key}/${this.latitude},${this.longitude}`
+
+    url: function(){
+        return `https://api.darksky.net/forecast/${darksky.key}/${darksky.latitude},${darksky.longitude}}`
+    }
 }
+
+url = darksky.url()
+console.log(url)
 
 proxy = 'https://cors-anywhere.herokuapp.com/';
 proxy2 = "https://crossorigin.me/";
 
-fetch(proxy + darksky.url)
+fetch(url)
   .then((response) => {
     return response.json();
   })
