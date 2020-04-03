@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commute Information</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+  </head>
+  <body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Index</a></li>
+                <li><a href="database.html">Database</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main role="main" class="container">
+      <!-- Location -->
+      <div class="center">
+        <h1>Location</h1>
+      </div>
+      <div class ="index-section">
+        <div class="index-subsection" id="start-location">
+          <h2>Start</h2>
+          <div id="input">
+            <label class="hidden" for="start-latitude-input">Enter latitude</label>
+            <input type="text" id="start-latitude-input" placeholder="latitude"><br>
+            <label class="hidden" for="start-longitude-input">Enter longitude</label>
+            <input type="text" id="start-longitude-input" placeholder="longitude"><br>
+            <button id="start-set-location">Set Location</button><br>
+            <button id="get-geolocation">Get Geolocation</button>
+          </div>
+          <p>
+            Latitude: <span id="start-lat-text"></span>&deg;<br>
+            Longitude: <span id="start-lon-text"></span>&deg;
+          </p>
+        </div>
+        <div class="index-subsection" id="end-location">
+          <h2>End</h2>
+          <div id="input">
+            <label class="hidden" for="end-latitude-input">Enter latitude</label>
+            <input type="text" id="end-latitude-input" placeholder="latitude"><br>
+            <label class="hidden" for="end-longitude-input">Enter longitude</label>
+            <input type="text" id="end-longitude-input" placeholder="longitude"><br>
+            <button id="end-set-location">Set Location</button><br>
+          </div>
+          <p>
+            Latitude: <span id="end-lat-text"></span>&deg;<br>
+            Longitude: <span id="end-lon-text"></span>&deg;
+          </p>
+        </div>
+      </div>
+      <!-- Weather -->
+      <div id="weather">
+        <h1>Weather</h1>
+        <button id="get-weather">Get Weather</button>
+        <a class="attribution" href="https://darksky.net/poweredby/">Powered by Darksky</a>
+        <div id="start-weather"></div>
+          <h2>Start</h2>
+          <p>Temperature: <span id="start-temp"></span>&deg;F</p>
+      </div>
+      <div id="end-weather"></div>
+          <h2>End</h2>
+          <p>Temperature: <span id="end-temp"></span>&deg;F</p>
+      </div>
+      <!-- Train -->
+      <h1>Train</h1>
+        <p>Wood-Ridge</p>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

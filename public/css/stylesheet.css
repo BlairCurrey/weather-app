@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Nav */
+nav ul{
+    padding-inline-start: 0;
+}
+
+nav li{
+    display: inline-block;
+    padding-inline-start: 0;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* general */
+.hidden{
+    display: none;
+}
+
+.attribution{
+    font-size: .75rem;
+}
+
+/* database specific */
+table, th, td {
+    border: 1px solid black;
+}
+
+th {
+padding: 5px;
+}
+
+tr > td{
+    text-align: center;
+}
