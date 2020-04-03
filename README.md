@@ -1,2 +1,2 @@
-# commute-info
-web app to display basic commute info
+# weather-app
+web app to get weather using darksky api
