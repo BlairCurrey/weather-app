@@ -6,7 +6,9 @@ The primary purpose of this web app is to learn about the backend of web develop
 ## Description
 This is a simple web application that gets two sets of coordinates from the user (either manually or from geolocation) and sends them to an endpoint on the server. The server makes API calls to Darksky for each coordinate and returns the response to the client. Then the client grabs the temperatures, renders them, and sends the coordinate pairs and their temperature back to the server where it is saved to the database. Additionally, the user can query the database from the database page. The 'Get Data' button makes a request to the server which finds all the items in the database, sorts them by date, and then returns the 30 most recent entries. The client builds a table according to how many entries are returned.
 
+## Demo
 ![Index Demo](https://i.imgur.com/GKUyVJJ.gif)
+![Database Demo](https://i.imgur.com/LRtY8vD.gif)
 
 ## Technologies Utilized
 - Express.js
