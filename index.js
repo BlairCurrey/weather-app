@@ -5,7 +5,8 @@ require('dotenv').config();
 
 //Server
 const app = express();
-app.listen(3000, () => console.log('listening at port 3000'));
+const port = 3000 || process.env.PORT
+app.listen(port, () => console.log(`listening on port ${port}`));
 
 //Middleware
 app.use(express.static('public'));
