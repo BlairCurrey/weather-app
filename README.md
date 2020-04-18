@@ -1,4 +1,5 @@
 # weather-app
+https://blairc-weather-app.herokuapp.com/index.html
 
 ## Purpose
 The primary purpose of this web app was to learn about the backend of web development. My learning included servers, proxy-servers, databases, API's, endpoints, routes, environment variables, and :fire: CORS errors :fire:. I also learned more about ES6 Javascript. My eventual goal was to leverage aspects of this project to make a different web app, which I have done here. https://github.com/BlairCurrey/commute-dashboard This is a simple site that pulls in relevant information for commuting (weather, train times).
